@@ -33,7 +33,8 @@ export class NgxHtml2canvasService implements OnDestroy {
      * Use onCapture() to retrieve the result
      */
     public captureElement(): void {
-        html2canvas(this._configuration.element, this._options).then((canvas: HTMLCanvasElement) => this._capture$.next(canvas));
+        html2canvas(this._configuration.element, this._options)
+            .then((canvas: HTMLCanvasElement) => this._capture$.next(canvas));
     }
 
     /**

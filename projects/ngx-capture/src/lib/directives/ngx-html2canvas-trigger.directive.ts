@@ -10,9 +10,8 @@ export class NgxHtml2canvasTriggerDirective {
         private readonly _ngxHtml2canvasService: NgxHtml2canvasService
     ) { }
 
-
-    @HostListener('click', ['$event'])
-    public onClick($event): void {
+    @HostListener('click')
+    public onClick(): void {
         this._ngxHtml2canvasService.captureElement();
     }
 }
