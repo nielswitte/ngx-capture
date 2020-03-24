@@ -6,19 +6,19 @@
         "deprecation": {
             "severity": "warning"
         },
-        "component-class-suffix": true,
+        "component-class-suffix": false,
         "contextual-lifecycle": true,
         "directive-class-suffix": true,
         "directive-selector": [
             true,
             "attribute",
-            "app",
+            "ngx",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
-            "app",
+            "ngx",
             "kebab-case"
         ],
         "import-blacklist": [
@@ -54,7 +54,7 @@
         ],
         "no-empty": false,
         "no-inferrable-types": [
-            true,
+            false,
             "ignore-params"
         ],
         "no-non-null-assertion": true,
