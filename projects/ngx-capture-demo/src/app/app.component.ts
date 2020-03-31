@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxHtml2canvasService } from 'projects/ngx-capture/src/lib/services/ngx-html2canvas.service';
+import { NgxHtml2canvasService } from 'ngx-capture';
 
 
 @Component({

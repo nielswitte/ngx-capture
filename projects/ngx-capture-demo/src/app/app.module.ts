@@ -1,7 +1,7 @@
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxHtml2canvasModule } from 'projects/ngx-capture/src/lib/ngx-html2canvas.module';
+import { NgxHtml2canvasModule } from 'ngx-capture';
 
 
 @NgModule({

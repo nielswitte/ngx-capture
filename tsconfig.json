@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "my-lib": [
-        "dist/my-lib/my-lib",
-        "dist/my-lib"
+      "ngx-capture": [
+        "dist/ngx-capture/ngx-capture",
+        "dist/ngx-capture"
       ]
     }
   },
