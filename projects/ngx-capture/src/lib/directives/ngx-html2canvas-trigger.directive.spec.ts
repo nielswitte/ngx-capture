@@ -6,7 +6,7 @@ import { NgxHtml2canvasTriggerDirective } from './ngx-html2canvas-trigger.direct
 
 // * Host component:
 @Component({
-    template: `<button ngxHtml2canvasTrigger>Capture</button>`
+    template: `<button ngxHtml2canvasTrigger>Capture</button><div id="#captureElement"></div>`
 })
 class HostComponent { }
 

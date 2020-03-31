@@ -31,9 +31,11 @@ export class NgxHtml2canvasService implements OnDestroy {
     /**
      * Captures the configured element
      * Use onCapture() to retrieve the result
+     *
+     * @param element [optional] capture a specific element, when not provided use the configured value
      */
-    public captureElement(): void {
-        html2canvas(this._configuration.element, this._options)
+    public captureElement(element?: HTMLElement): void {
+        html2canvas(element ?? this._configuration.element, this._options)
             .then((canvas: HTMLCanvasElement) => this._capture$.next(canvas));
     }
 
