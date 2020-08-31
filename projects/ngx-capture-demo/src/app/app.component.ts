@@ -8,7 +8,8 @@ import { NgxHtml2canvasService } from 'ngx-capture';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    public result: string;
+    public resultFromService: string;
+    public resultFromDirective: string;
 
     public constructor(
         private readonly _ngxHtml2canvasService: NgxHtml2canvasService
@@ -17,10 +18,14 @@ export class AppComponent implements OnInit {
     }
 
     public ngOnInit(): void {
-        this._ngxHtml2canvasService.onCapture().subscribe((canvas: HTMLCanvasElement) => this.onCapture(canvas));
+        this._ngxHtml2canvasService.onCapture().subscribe((canvas: HTMLCanvasElement) => this.onCaptureFromService(canvas));
     }
 
-    public onCapture(canvas: HTMLCanvasElement): void {
-        this.result = canvas.toDataURL('image/png');
+    public onCaptureFromService(canvas: HTMLCanvasElement): void {
+        this.resultFromService = canvas.toDataURL('image/png');
+    }
+
+    public onCaptureFromDirective(canvas: HTMLCanvasElement): void {
+        this.resultFromDirective = canvas.toDataURL('image/png');
     }
 }

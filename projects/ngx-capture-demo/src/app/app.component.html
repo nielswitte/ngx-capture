@@ -2,6 +2,10 @@
 <p>Met een 2e regel....</p>
 
 
-<button ngxHtml2canvasTrigger>Capture!</button>
+<button ngxHtml2canvasTrigger (captureCanvas)="onCaptureFromDirective($event)">Capture!</button>
 
-<img [src]="result">
+<h2>From Service</h2>
+<img [src]="resultFromService">
+
+<h2>From Directive</h2>
+<img [src]="resultFromDirective">
