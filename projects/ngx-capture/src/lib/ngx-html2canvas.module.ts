@@ -24,7 +24,7 @@ export class NgxHtml2canvasModule {
         }
     }
 
-    public static forRoot(config: NgxHtml2canvasConfiguration = NgxHtml2canvasService.DEFAULT_CONFIGURATION): ModuleWithProviders {
+    public static forRoot(config: NgxHtml2canvasConfiguration = NgxHtml2canvasService.DEFAULT_CONFIGURATION): ModuleWithProviders<NgxHtml2canvasModule> {
         return {
             ngModule: NgxHtml2canvasModule,
             providers: [
